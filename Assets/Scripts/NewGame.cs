@@ -19,6 +19,6 @@ public class NewGame : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("MianScene");
+        SceneManager.LoadScene("MainScene");
     }
 }
