@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.DefaultCompany.Snowball",
+  "applicationId": "com.Team28.Snowball",
   "variantName": "release",
   "elements": [
     {

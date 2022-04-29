@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.DefaultCompany.Snowball",
+  "applicationId": "com.Team28.Snowball",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "resources-release.ap_",
       "properties": {
-        "packageId": "com.DefaultCompany.Snowball",
+        "packageId": "com.Team28.Snowball",
         "split": "",
         "minSdkVersion": "22"
       }

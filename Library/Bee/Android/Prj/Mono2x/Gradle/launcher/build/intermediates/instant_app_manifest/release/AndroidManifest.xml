@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.DefaultCompany.Snowball"
+    package="com.Team28.Snowball"
     android:installLocation="preferExternal"
     android:targetSandboxVersion="2"
     android:versionCode="1"
@@ -21,9 +21,6 @@
     <uses-feature
         android:name="android.hardware.vulkan.version"
         android:required="false" />
-
-    <uses-permission android:name="android.permission.VIBRATE" />
-
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />

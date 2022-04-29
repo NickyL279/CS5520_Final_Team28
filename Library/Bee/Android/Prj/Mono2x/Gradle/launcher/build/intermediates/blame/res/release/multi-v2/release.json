@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\JOY\\Snow ball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v28_values-v28.arsc.flat",
+            "outputFile": "D:\\Study\\Unity Workspace\\CS5520_Final_Team28\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v28_values-v28.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\JOY\\Snow ball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v28\\styles.xml",
+                    "source": "D:\\Study\\Unity Workspace\\CS5520_Final_Team28\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v28\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "0",
@@ -25,10 +25,10 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\JOY\\Snow ball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
+            "outputFile": "D:\\Study\\Unity Workspace\\CS5520_Final_Team28\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\JOY\\Snow ball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\Study\\Unity Workspace\\CS5520_Final_Team28\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "2,2",
@@ -45,7 +45,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\JOY\\Snow ball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\Study\\Unity Workspace\\CS5520_Final_Team28\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                },
+                {
+                    "source": "D:\\Study\\Unity Workspace\\CS5520_Final_Team28\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "5,2,7",
                         "startColumns": "0,0,0",
@@ -62,31 +79,14 @@
                         "endColumns": "8,8,8",
                         "endOffsets": "311,449,676"
                     }
-                },
-                {
-                    "source": "C:\\Users\\JOY\\Snow ball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\ids.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "46",
-                        "endOffsets": "97"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "45",
-                        "endOffsets": "96"
-                    }
                 }
             ]
         },
         {
-            "outputFile": "C:\\Users\\JOY\\Snow ball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v21_values-v21.arsc.flat",
+            "outputFile": "D:\\Study\\Unity Workspace\\CS5520_Final_Team28\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v21_values-v21.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\JOY\\Snow ball\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "D:\\Study\\Unity Workspace\\CS5520_Final_Team28\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "0",
