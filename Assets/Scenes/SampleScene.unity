@@ -544,6 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69c71a348543364a8f1c54500165cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameLoss: {fileID: 574019249}
   speed: 5
   rb: {fileID: 574019250}
   horizontalMultiplier: 2
