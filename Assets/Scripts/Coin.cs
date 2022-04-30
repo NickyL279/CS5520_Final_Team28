@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour
     private void OnTriggerEnter (Collider other)
     {
         // Check that the object we collided with is the player.
-        if (other.gameObject.name != "Snow ball") 
+        if (other.gameObject.name != "Player") 
         {
             return;
         }

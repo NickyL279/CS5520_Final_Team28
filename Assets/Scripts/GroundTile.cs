@@ -13,6 +13,7 @@ public class GroundTile : MonoBehaviour
         SpawnObstacle();
         SpawnCoins();
         SpawnSnowflakes();
+        SpawnTrees();
     }
     
     private void OnTriggerExit(Collider other)
@@ -75,6 +76,18 @@ public class GroundTile : MonoBehaviour
         for (var i = 0; i < snowFlakeToSpawan; i++)
         {
             GameObject temp = Instantiate(snowFlake);
+            temp.transform.position = GetRandomPointInCollider(GetComponent<Collider>());
+        }
+    }
+
+    public GameObject tree;
+
+    void SpawnTrees ()
+    {
+        int treeToSpawn = 2;
+        for (var i = 0; i < treeToSpawn; i++)
+        {
+            GameObject temp = Instantiate(tree);
             temp.transform.position = GetRandomPointInCollider(GetComponent<Collider>());
         }
     }

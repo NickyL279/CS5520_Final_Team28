@@ -341,6 +341,7 @@
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/SetScale.cs"
 "Assets/Scripts/SnowFlake.cs"
+"Assets/Scripts/Tree.cs"
 "Assets/Scripts/Vibrator.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

@@ -14,7 +14,7 @@ public class SetScale : MonoBehaviour
     {
         if (isMinSize  == false)
         {
-            StartCoroutine(Melt());
+            //StartCoroutine(Melt());
         }
     }
 
