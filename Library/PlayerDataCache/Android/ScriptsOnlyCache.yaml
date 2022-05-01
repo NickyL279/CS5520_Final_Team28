@@ -4,10 +4,19 @@ ScriptsOnlyBuild:
     - CamerFollow
     - Coin
     - EndMenu
-    - EndWall
+    - Fire
     - GameManager
+    - GroundSpawner
+    - GroundTile
+    - Obstacle
+    - ObstacleTree
     - PlayerMovement
     - SceneLoader
+    - SetScale
+    - SnowFlake
+    - SwipeDetection
+    Unity.CollabProxy.Editor.dll:
+    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -85,9 +94,24 @@ ScriptsOnlyBuild:
     methodName: LoadGame
   - assembly: Assembly-CSharp
     fullTypeName: EndMenu
+    methodName: BackToMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: EndMenu
+    methodName: LoadGame
+  - assembly: Assembly-CSharp
+    fullTypeName: EndMenu
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: EndMenu
+    methodName: BackToMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: EndMenu
+    methodName: LoadGame
+  - assembly: Assembly-CSharp
+    fullTypeName: EndMenu
     methodName: QuitGame
   sceneClasses:
-    Assets/Scenes/Gameover.unity:
+    Assets/Scenes/GameOver.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -109,21 +133,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1736}
+      Script: {instanceID: 1528}
     - Class: 114
-      Script: {instanceID: 2272}
+      Script: {instanceID: 1814}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 1968}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2418}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2538}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 3134}
+      Script: {instanceID: 2708}
     - Class: 114
-      Script: {instanceID: 4162}
+      Script: {instanceID: 2896}
+    - Class: 114
+      Script: {instanceID: 2988}
+    - Class: 114
+<<<<<<< HEAD
+      Script: {instanceID: 3868}
+    - Class: 114
+      Script: {instanceID: 19478}
+    - Class: 114
+      Script: {instanceID: 19480}
+=======
+      Script: {instanceID: 20282}
+    - Class: 114
+      Script: {instanceID: 20286}
+>>>>>>> 9bcf30da532c9c80d27e5816de58d1f8ab1015cb
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,25 +212,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2272}
+      Script: {instanceID: 1736}
     - Class: 114
-      Script: {instanceID: 2514}
+      Script: {instanceID: 1756}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2114}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2148}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2306}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 2418}
     - Class: 114
-      Script: {instanceID: 3160}
+      Script: {instanceID: 2470}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 2530}
     - Class: 114
-      Script: {instanceID: 4060}
+      Script: {instanceID: 2538}
     - Class: 114
-      Script: {instanceID: 4782}
+      Script: {instanceID: 2708}
+    - Class: 114
+      Script: {instanceID: 2738}
+    - Class: 114
+      Script: {instanceID: 2896}
+    - Class: 114
+      Script: {instanceID: 2918}
+    - Class: 114
+      Script: {instanceID: 3158}
+    - Class: 114
+      Script: {instanceID: 3320}
+    - Class: 114
+      Script: {instanceID: 3698}
+    - Class: 114
+      Script: {instanceID: 4638}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -237,33 +289,94 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1736}
+      Script: {instanceID: 1528}
     - Class: 114
-      Script: {instanceID: 1890}
+      Script: {instanceID: 1724}
     - Class: 114
-      Script: {instanceID: 1976}
+      Script: {instanceID: 1814}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 2104}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2418}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2538}
     - Class: 114
-      Script: {instanceID: 2730}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2708}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3134}
+      Script: {instanceID: 2988}
     - Class: 114
-      Script: {instanceID: 3602}
+      Script: {instanceID: 3456}
     - Class: 114
-      Script: {instanceID: 4008}
+      Script: {instanceID: 3868}
     - Class: 114
-      Script: {instanceID: 4122}
+      Script: {instanceID: 3980}
     - Class: 114
-      Script: {instanceID: 4398}
+      Script: {instanceID: 4254}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/WinScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1528}
+    - Class: 114
+      Script: {instanceID: 1814}
+    - Class: 114
+      Script: {instanceID: 1968}
+    - Class: 114
+      Script: {instanceID: 2418}
+    - Class: 114
+      Script: {instanceID: 2538}
+    - Class: 114
+      Script: {instanceID: 2580}
+    - Class: 114
+      Script: {instanceID: 2708}
+    - Class: 114
+      Script: {instanceID: 2896}
+    - Class: 114
+      Script: {instanceID: 2988}
+    - Class: 114
+      Script: {instanceID: 3868}
+    - Class: 114
+      Script: {instanceID: 19478}
+    - Class: 114
+      Script: {instanceID: 19480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -283,6 +396,12 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
@@ -293,12 +412,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -349,10 +462,22 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 022ef3ba3a50b8ad2dbf86f5f6668140
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwipeDetection
+  - hash:
+      serializedVersion: 2
       Hash: 8a874a8207a7664bdf44e61f28717254
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: SkewTextExample
+  - hash:
+      serializedVersion: 2
+      Hash: 62cef9f13a042d4008a8138dfdef088a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SnowFlake
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -386,6 +511,18 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwipeLogger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
     className: PanelEventHandler
@@ -409,10 +546,22 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Obstacle
+  - hash:
+      serializedVersion: 2
       Hash: 91d258529db2b5060a913f2afcea1a21
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tree
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -421,16 +570,16 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 4f60ff347d4efee4ef8cc7f627735018
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: TMPro.Examples
-    className: Benchmark02
-  - hash:
-      serializedVersion: 2
       Hash: 9a87526c894d9fc2052bb3c97658fbd7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4f60ff347d4efee4ef8cc7f627735018
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TMPro.Examples
+    className: Benchmark02
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -445,6 +594,12 @@ ScriptsOnlyBuild:
     className: TextMeshSpawner
   - hash:
       serializedVersion: 2
+      Hash: ae5192bd4dec85740191f8e9a41eca6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetScale
+  - hash:
+      serializedVersion: 2
       Hash: 27e5341178f188b89bdc6495710b590c
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -455,6 +610,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 62cef9f13a042d4008a8138dfdef088a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Coin
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -505,6 +666,12 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 0fe36c2123d56cab88ac55870a5f2622
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GroundTile
+  - hash:
+      serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -553,6 +720,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: d409999e69f2bba6a31bddcdc9f52923
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GroundSpawner
+  - hash:
+      serializedVersion: 2
       Hash: 0784d4fd5b93bd75440d01eb2fac4233
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -589,12 +762,6 @@ ScriptsOnlyBuild:
     className: Benchmark04
   - hash:
       serializedVersion: 2
-      Hash: 62cef9f13a042d4008a8138dfdef088a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Coin
-  - hash:
-      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -611,6 +778,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: dc8846aff1395a6a3d4edbc79a689fda
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fire
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -757,6 +930,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObstacleTree
+  - hash:
+      serializedVersion: 2
       Hash: 8b1fe5dfdcf943fb3b72506b9f19335f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -799,12 +978,6 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EndWall
-  - hash:
-      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -833,12 +1006,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: CameraController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EndMenu
   - hash:
       serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
@@ -949,7 +1116,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 6e196a814935014938e12cf999cd57b4
+      Hash: dd4bcc8ee3e5cc57b40505fb75f50ac1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -963,5 +1130,6 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/SampleScene.unity
-  - Assets/Scenes/Gameover.unity
+  - Assets/Scenes/GameOver.unity
+  - Assets/Scenes/WinScene.unity
   playerPath: C:/Users/Jiangwei/Desktop/snow ball.apk

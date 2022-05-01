@@ -14,10 +14,11 @@ public class GameManager : MonoBehaviour
     {
         score++;
         scoreText.text = "SCORE:" + score;
-		if(score > 0)
-		{
-			SceneManager.LoadScene("WinScene");
-		}
+
+        if(score > 50)
+        {
+            SceneManager.LoadScene("WinScene");
+        }
     }
     
     private void Awake()
