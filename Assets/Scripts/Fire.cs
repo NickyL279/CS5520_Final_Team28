@@ -3,7 +3,7 @@ using UnityEngine;
 public class Fire : MonoBehaviour
 {
     PlayerMovement playerMovement;
-    public float minSize = 0.00005f;
+    public float minSize = 0.005f;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
