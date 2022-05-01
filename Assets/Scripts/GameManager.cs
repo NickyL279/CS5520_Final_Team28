@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class GameManager : MonoBehaviour
     {
         score++;
         scoreText.text = "SCORE:" + score;
+		if(score > 0)
+		{
+			SceneManager.LoadScene("WinScene");
+		}
     }
     
     private void Awake()
