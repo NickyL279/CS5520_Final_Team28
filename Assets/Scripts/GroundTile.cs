@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class GroundTile : MonoBehaviour
 {
 
@@ -14,6 +13,7 @@ public class GroundTile : MonoBehaviour
         SpawnCoins();
         SpawnSnowflakes();
         SpawnTrees();
+        SpawnObstacleTree();
     }
     
     private void OnTriggerExit(Collider other)
@@ -68,6 +68,23 @@ public class GroundTile : MonoBehaviour
         return point;
     }
 
+    Vector3 GetRandomZaixsPointInCollider (Collider collider)
+    {
+        Vector3 point = new Vector3(
+            collider.bounds.max.x,
+            collider.bounds.max.y,
+            collider.bounds.max.z
+        );
+
+        if (point != collider.ClosestPoint(point)) 
+        {
+            point = GetRandomPointInCollider(collider);
+        }
+
+        point.y = 1;
+        return point;
+    }
+
     public GameObject snowFlake;
 
     void SpawnSnowflakes ()
@@ -90,5 +107,17 @@ public class GroundTile : MonoBehaviour
             GameObject temp = Instantiate(tree);
             temp.transform.position = GetRandomPointInCollider(GetComponent<Collider>());
         }
+    }
+
+    public GameObject obstacle_tree;
+
+    void SpawnObstacleTree() 
+    {
+       int obstacleTreeToSpawn = Random.Range(0, 2);
+       for (var i = 0; i < obstacleTreeToSpawn; i++)
+       {
+           GameObject temp = Instantiate(obstacle_tree);
+           temp.transform.position = GetRandomZaixsPointInCollider(GetComponent<Collider>());
+       }
     }
 }

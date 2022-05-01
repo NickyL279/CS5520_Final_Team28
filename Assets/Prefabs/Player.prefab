@@ -132,6 +132,10 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 5781372760734485400}
   horizontalMultiplier: 2
+  jumpForce: 1000
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &5781372760734485394
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -123,11 +123,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &549558785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5781372760734485403, guid: bfa03d160f47efa418f7fe41ab12bf19, type: 3}
+  m_PrefabInstance: {fileID: 5781372761301851434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &574019254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5781372760734485404, guid: bfa03d160f47efa418f7fe41ab12bf19, type: 3}
   m_PrefabInstance: {fileID: 5781372761301851434}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &574019262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549558785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c84fe8ee4da86244c9cfdcae023aae1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectSwipeOnlyAfterRelease: 0
+  minDistanceForSwipe: 20
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +438,10 @@ PrefabInstance:
     - target: {fileID: 5781372760734485404, guid: bfa03d160f47efa418f7fe41ab12bf19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5781372760734485405, guid: bfa03d160f47efa418f7fe41ab12bf19, type: 3}
+      propertyPath: jumpForce
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfa03d160f47efa418f7fe41ab12bf19, type: 3}
