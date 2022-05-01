@@ -83,6 +83,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SceneLoader
     methodName: LoadGame
+  - assembly: Assembly-CSharp
+    fullTypeName: EndMenu
+    methodName: QuitGame
   sceneClasses:
     Assets/Scenes/Gameover.unity:
     - Class: 1
@@ -106,21 +109,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1736}
     - Class: 114
-      Script: {instanceID: 2102}
+      Script: {instanceID: 2272}
     - Class: 114
-      Script: {instanceID: 2402}
-    - Class: 114
-      Script: {instanceID: 2518}
+      Script: {instanceID: 2572}
     - Class: 114
       Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 3044}
     - Class: 114
-      Script: {instanceID: 3994}
+      Script: {instanceID: 3134}
+    - Class: 114
+      Script: {instanceID: 4162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -171,25 +174,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2102}
+      Script: {instanceID: 2272}
     - Class: 114
-      Script: {instanceID: 2344}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2402}
-    - Class: 114
-      Script: {instanceID: 2518}
+      Script: {instanceID: 2572}
     - Class: 114
       Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 3044}
     - Class: 114
-      Script: {instanceID: 3296}
+      Script: {instanceID: 3160}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 4614}
+      Script: {instanceID: 4060}
+    - Class: 114
+      Script: {instanceID: 4782}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -199,6 +202,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -230,33 +237,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1736}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1890}
     - Class: 114
-      Script: {instanceID: 1806}
+      Script: {instanceID: 1976}
     - Class: 114
-      Script: {instanceID: 2092}
+      Script: {instanceID: 2262}
     - Class: 114
-      Script: {instanceID: 2402}
-    - Class: 114
-      Script: {instanceID: 2518}
-    - Class: 114
-      Script: {instanceID: 2560}
+      Script: {instanceID: 2572}
     - Class: 114
       Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2730}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 3432}
+      Script: {instanceID: 3044}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3954}
+      Script: {instanceID: 3602}
     - Class: 114
-      Script: {instanceID: 4230}
+      Script: {instanceID: 4008}
+    - Class: 114
+      Script: {instanceID: 4122}
+    - Class: 114
+      Script: {instanceID: 4398}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -276,12 +283,6 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
@@ -292,6 +293,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -942,7 +949,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: a116615b533a4b37993438ed019a6179
+      Hash: 6e196a814935014938e12cf999cd57b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
