@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject GameLoss;
 
     [SerializeField] float jumpForce = 400f;
+
     [SerializeField] LayerMask groundMask;
 
      private void Awake()
@@ -25,15 +26,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void SwipeDetection_OnSwipe(SwipeData data)
     {
-        //Debug.Log("Swipe in Dirction: " + data.Direction);
+        Debug.Log("Swipe in Dirction: " + data.Direction);
         if (data.Direction == SwipeDirection.Up)
         {
+           
+
             float height = GetComponent<Collider>().bounds.size.y;
             bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
 
-            Vibrator.Vibrate();
+            if (isGrounded) 
+            {
+                rb.velocity = new Vector3(0, 27, 0);
+            }
             // If we are, jump.
-            rb.AddForce(Vector3.up * jumpForce);
+            //rb.AddForce(Vector3.up * jumpForce);
+            
             //Jump();
         }
 
@@ -67,7 +74,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        //SwipeDetection.OnSwipe += SwipeDetection_OnSwipe;
+    }
+
+    void OnEnable() {
         SwipeDetection.OnSwipe += SwipeDetection_OnSwipe;
+    }
+    void OnDisable() {
+        SwipeDetection.OnSwipe -= SwipeDetection_OnSwipe;
     }
 
     // Update is called once per frame
@@ -92,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isAlive = false;
         // Restart the game;
-        Vibrator.Vibrate();
+        //Vibrator.Vibrate();
         GameLoss.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //Invoke("Restart", 2);
@@ -109,8 +123,9 @@ public class PlayerMovement : MonoBehaviour
         float height = GetComponent<Collider>().bounds.size.y;
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
 
-        Vibrator.Vibrate();
+        //Vibrator.Vibrate();
         // If we are, jump.
         rb.AddForce(Vector3.up * jumpForce);
+        Debug.Log("rb: "+ rb);
     }
 }
