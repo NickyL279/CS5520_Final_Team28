@@ -12,7 +12,7 @@ public class EndWall : MonoBehaviour
             return;
         }
         //Add to the player's score
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         //Destory this coin
         Destroy(gameObject);
     }
