@@ -28,8 +28,13 @@ public class PlayerMovement : MonoBehaviour
         //Debug.Log("Swipe in Dirction: " + data.Direction);
         if (data.Direction == SwipeDirection.Up)
         {
+            float height = GetComponent<Collider>().bounds.size.y;
+            bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
+
             Vibrator.Vibrate();
-            Jump();
+            // If we are, jump.
+            rb.AddForce(Vector3.up * jumpForce);
+            //Jump();
         }
 
         if (data.Direction == SwipeDirection.Left)
