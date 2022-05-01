@@ -1,4 +1,4 @@
-com.Team28.EndlessRunnerTutorial
+com.Team28.SnowBall
 id unitySurfaceView
 mipmap app_icon
 mipmap app_icon_round

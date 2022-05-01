@@ -9,10 +9,11 @@ public class GroundTile : MonoBehaviour
     void Start()
     {
         groundSpawner = GameObject.FindObjectOfType<GroundSpawner>();
-        SpawnObstacle();
+        //SpawnObstacle();
         SpawnCoins();
         SpawnSnowflakes();
-        SpawnTrees();
+        //SpawnTrees();
+        SpawnFire();
         SpawnObstacleTree();
     }
     
@@ -97,14 +98,26 @@ public class GroundTile : MonoBehaviour
         }
     }
 
-    public GameObject tree;
+    // public GameObject tree;
 
-    void SpawnTrees ()
+    // void SpawnTrees ()
+    // {
+    //     int treeToSpawn = 2;
+    //     for (var i = 0; i < treeToSpawn; i++)
+    //     {
+    //         GameObject temp = Instantiate(tree);
+    //         temp.transform.position = GetRandomPointInCollider(GetComponent<Collider>());
+    //     }
+    // }
+
+    public GameObject fire;
+
+    void SpawnFire ()
     {
-        int treeToSpawn = 2;
-        for (var i = 0; i < treeToSpawn; i++)
+        int fireToSpawn = 2;
+        for (var i = 0; i < fireToSpawn; i++)
         {
-            GameObject temp = Instantiate(tree);
+            GameObject temp = Instantiate(fire);
             temp.transform.position = GetRandomPointInCollider(GetComponent<Collider>());
         }
     }
@@ -113,7 +126,16 @@ public class GroundTile : MonoBehaviour
 
     void SpawnObstacleTree() 
     {
-       int obstacleTreeToSpawn = Random.Range(0, 2);
+       int num = Random.Range(0, 5);
+       int obstacleTreeToSpawn = 0;
+       if (num == 0)
+       {
+           obstacleTreeToSpawn = 1;
+       } else 
+       {
+           obstacleTreeToSpawn = 0;
+       }
+
        for (var i = 0; i < obstacleTreeToSpawn; i++)
        {
            GameObject temp = Instantiate(obstacle_tree);

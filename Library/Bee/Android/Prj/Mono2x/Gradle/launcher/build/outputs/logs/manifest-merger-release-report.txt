@@ -9,7 +9,7 @@ INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gra
 INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 	package
-		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-112
+		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-99
 		INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 		INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 	android:versionName
@@ -17,7 +17,7 @@ INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gra
 		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 		INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:113-159
+		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:100-146
 	android:versionCode
 		INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
@@ -25,7 +25,7 @@ INJECTED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gra
 	xmlns:android
 		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:160-200
+		ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:147-187
 supports-screens
 ADDED from C:\CS5520_Final_Team28-Jiangwei\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
 	android:largeScreens

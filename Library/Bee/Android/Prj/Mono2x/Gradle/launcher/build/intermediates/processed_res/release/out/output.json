@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.Team28.EndlessRunnerTutorial",
+  "applicationId": "com.Team28.SnowBall",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "resources-release.ap_",
       "properties": {
-        "packageId": "com.Team28.EndlessRunnerTutorial",
+        "packageId": "com.Team28.SnowBall",
         "split": "",
         "minSdkVersion": "22"
       }

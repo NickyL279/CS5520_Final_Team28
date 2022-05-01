@@ -30,47 +30,42 @@
                 {
                     "source": "C:\\CS5520_Final_Team28-Jiangwei\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "5,2,7",
-                        "startColumns": "0,0,0",
-                        "startOffsets": "190,53,288",
-                        "endLines": "6,4,10",
-                        "endColumns": "8,8,8",
-                        "endOffsets": "286,188,513"
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
                     },
                     "to": {
                         "startLines": "5,7,10",
                         "startColumns": "4,4,4",
-                        "startOffsets": "229,329,467",
+                        "startOffsets": "216,316,454",
                         "endLines": "6,9,13",
                         "endColumns": "8,8,8",
-                        "endOffsets": "324,462,689"
+                        "endOffsets": "311,449,676"
                     }
                 },
                 {
                     "source": "C:\\CS5520_Final_Team28-Jiangwei\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "2,2",
-                        "startOffsets": "55,114",
-                        "endColumns": "57,65",
-                        "endOffsets": "110,177"
+                        "startLines": "2,-1",
+                        "startColumns": "2,-1",
+                        "startOffsets": "55,-1",
+                        "endColumns": "44,-1",
+                        "endOffsets": "97,-1"
                     },
                     "to": {
                         "startLines": "3,4",
                         "startColumns": "4,4",
-                        "startOffsets": "101,161",
-                        "endColumns": "59,67",
-                        "endOffsets": "156,224"
+                        "startOffsets": "101,148",
+                        "endColumns": "46,67",
+                        "endOffsets": "143,211"
                     }
                 },
                 {
                     "source": "C:\\CS5520_Final_Team28-Jiangwei\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\ids.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "46",
-                        "endOffsets": "97"
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
                     },
                     "to": {
                         "startLines": "2",
