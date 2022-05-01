@@ -3,6 +3,7 @@ using UnityEngine;
 public class Fire : MonoBehaviour
 {
     PlayerMovement playerMovement;
+    public float minSize = 0.00005f;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
@@ -14,22 +15,26 @@ public class Fire : MonoBehaviour
         Vibrator.Vibrate();
         // Add the volume of the snowball.
         Vector3 currentScale = other.gameObject.transform.localScale;
+        Vector3 minScale = new Vector3(minSize, minSize, minSize);
 
-        if (other.gameObject.localScale.magnitude < 0.0000005f)
+        Debug.Log("currentScale"+currentScale);
+
+        if (currentScale.magnitude <= minScale.magnitude) 
         {
-            other.gameObject.PlayerMovement.Die();
-        } else {
-            other.gameObject.transform.localScale = new Vector3(0.9f * currentScale.x,
+            playerMovement.Die();
+            Debug.Log("Player dies.");
+        }
+
+        other.gameObject.transform.localScale = new Vector3(0.9f * currentScale.x,
          0.9f * currentScale.y, 0.9f * currentScale.z);
 
         // Destroy this snowflake object.
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 
     void Start()
     {
-        
+         playerMovement = GameObject.FindObjectOfType<PlayerMovement>();
     }
 
     // Update is called once per frame
